@@ -8,8 +8,7 @@ int main() {
     float area;                              float area1;
     float pib;                               float pib1;
     int turismo;                             int turismo1;
-    float densidade;                         float densidade1;
-    float percapita;                         float percapita1;
+    
 
     printf("Desafio Super Trunfo - Países\n");
     printf("\n");
@@ -32,12 +31,7 @@ int main() {
     scanf("%f", &pib);
     printf("Digite a quantidade de pontos turísticos:\n");
     scanf("%d", &turismo);
-
-    densidade = populacao / area;            
-    percapita = pib / populacao;
-    
     printf("\n");
-    
     printf("Digite o nome do segundo estado:\n");
     scanf("%s", estado1);
     printf("Digite o código:\n");
@@ -55,9 +49,12 @@ int main() {
     scanf("%f", &pib1);
     printf("Digite a quantidade de pontos turísticos:\n");
     scanf("%d", &turismo1);
+    
+    float densidade;                                    float densidade1;
+    float percapita;                                    float percapita1;
 
-    densidade1 = populacao1 / area1;
-    percapita1 = pib1 / populacao1;
+    densidade = populacao / area;                       densidade1 = populacao1 / area1;        
+    percapita = pib*1000000000 / populacao;             percapita1 = pib1*1000000000 / populacao1;
 
     printf("\n");
     printf("Carta 1:\n");
